@@ -8,7 +8,6 @@ class Actor < ActiveRecord::Base
   
   def list_roles 
     array = []
-    #binding.pry
     self.shows.size.times do |i|
       array << "#{self.shows[i].characters[i].name} - #{self.shows[i].name}"
     end 
