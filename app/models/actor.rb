@@ -1,5 +1,5 @@
 class Actor < ActiveRecord::Base
-  has_many :characters, foreign_key: "character_id"
+  has_many :characters
   has_many :shows, through: :characters
   
   def full_name 
