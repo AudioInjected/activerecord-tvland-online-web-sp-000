@@ -8,9 +8,6 @@ class Actor < ActiveRecord::Base
   
   def list_roles 
     #binding.pry
-    self.shows.collect do |show|
-      binding.pry
-      "#{show.characters.name} - #{show.name}"
-    end
+    self.shows.size.times do |i|
   end 
 end
