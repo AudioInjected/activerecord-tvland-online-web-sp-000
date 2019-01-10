@@ -1,3 +1,3 @@
 class Character < ActiveRecord::Base
-  create_table 
+  create_table :characters 
 end
