@@ -10,7 +10,7 @@ class Actor < ActiveRecord::Base
     array = []
     #binding.pry
     self.shows.size.times do |i|
-      array << "#{self.shows.characters[i].name} - #{self.shows[i].name}"
+      array << "#{self.shows[i].characters[i].name} - #{self.shows[i].name}"
     end 
     array
   end 
