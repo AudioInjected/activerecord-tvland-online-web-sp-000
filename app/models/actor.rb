@@ -12,5 +12,6 @@ class Actor < ActiveRecord::Base
     self.shows.size.times do |i|
       array << "#{self.shows.characters[i].name} - #{self.shows[i].name}"
     end 
+    array
   end 
 end
